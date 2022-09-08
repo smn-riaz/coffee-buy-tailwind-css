@@ -1,5 +1,5 @@
 # COFFEE BUY
-### Hospital Management (MERN STACK) Web Application.
+### Coffee Selling Website UI (TAILWIND CSS).
 
 
 ### `Live Website :` [Coffee Buy](https://coffee-buy.web.app/)
