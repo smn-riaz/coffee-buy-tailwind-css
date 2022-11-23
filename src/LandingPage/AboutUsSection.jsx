@@ -5,7 +5,7 @@ import Button from "./Button";
 
 const AboutUsSection = () => {
   return (
-    <main className="section-layout">
+    <main className="section-layout" id="about">
       <section className="md:flex justify-center items-center sm:px-16 p-8  space-y-6">
         <div className="basis-1/2 flex justify-center items-center">
           <img
