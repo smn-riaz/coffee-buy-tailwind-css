@@ -19,23 +19,23 @@ const FAQ = () => {
     <main className="section-layout">
       <SectionHeadline>F.A.Q</SectionHeadline>
 
-      <section className="flex flex-col justify-center items-center space-y-4">
+      <section className="flex flex-col justify-center items-center transition duration-500 space-y-4">
         <div className="bg-[#2e1b11] w-[280px] xs:w-[480px] border rounded-xl duration-700">
           <div className="flex justify-between items-center px-4">
             <h1 className="py-4 font-semibold">FAQ 1</h1>
-            { !data ?
+            { data ==='faq1' ?
             <p
             className="p-[2px] rounded-full border-[0.5px] border-white cursor-pointer"
             onClick={() => handleToggle("faq1")}
           >
-            <AiOutlinePlus color="white"/>
+            <AiOutlineMinus color="white"/>
           </p>
           :
           <p
               className="p-[2px] rounded-full border-[0.5px] border-white cursor-pointer"
               onClick={() => handleToggle("faq1")}
             >
-              <AiOutlineMinus color="white"/>
+              <AiOutlinePlus color="white"/>
             </p>
 
             }
@@ -52,19 +52,19 @@ const FAQ = () => {
         <div className="bg-[#2e1b11] w-[280px] xs:w-[480px] border rounded-xl duration-700">
           <div className="flex justify-between items-center px-4">
             <h1 className="py-4 font-semibold">FAQ 2</h1>
-            { !data ?
+            { data === "faq2" ?
             <p
             className="p-[2px] rounded-full border-[0.5px] border-white cursor-pointer"
             onClick={() => handleToggle("faq2")}
           >
-            <AiOutlinePlus color="white"/>
+            <AiOutlineMinus color="white"/>
           </p>
           :
           <p
               className="p-[2px] rounded-full border-[0.5px] border-white cursor-pointer"
               onClick={() => handleToggle("faq2")}
             >
-              <AiOutlineMinus color="white"/>
+              <AiOutlinePlus color="white"/>
             </p>
 
             }
@@ -81,19 +81,19 @@ const FAQ = () => {
         <div className="bg-[#2e1b11] w-[280px] xs:w-[480px] border rounded-xl duration-700">
           <div className="flex justify-between items-center px-4">
             <h1 className="py-4 font-semibold">FAQ 3</h1>
-            { !data ?
+            { data ==="faq3" ?
             <p
             className="p-[2px] rounded-full border-[0.5px] border-white cursor-pointer"
             onClick={() => handleToggle("faq3")}
           >
-            <AiOutlinePlus color="white"/>
+            <AiOutlineMinus color="white"/>
           </p>
           :
           <p
               className="p-[2px] rounded-full border-[0.5px] border-white cursor-pointer"
               onClick={() => handleToggle("faq3")}
             >
-              <AiOutlineMinus color="white"/>
+              <AiOutlinePlus color="white"/>
             </p>
 
             }

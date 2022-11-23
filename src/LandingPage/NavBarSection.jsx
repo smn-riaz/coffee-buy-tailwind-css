@@ -1,11 +1,8 @@
-import { faBarChart } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import React from "react";
 import { Link } from "react-router-dom";
-import Button from "./Button";
 
 const NavBarSection = () => {
-  const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
       <div className="navbar px-16 bg-[#241915]">

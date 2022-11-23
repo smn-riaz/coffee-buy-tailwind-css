@@ -8,6 +8,10 @@ module.exports = {
       colors:{
         landingbg:"#241915",
         servicecardbg:"#2E1A0F",
+      },
+      fontFamily:{
+        lobster: ['Lobster', 'cursive'],
+        ptsans: ['PT Sans', 'sans-serif']
       }
     },
     screens: {

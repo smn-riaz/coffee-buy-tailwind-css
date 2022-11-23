@@ -30,6 +30,7 @@ const Contact = () => {
               className="bg-inherit border-b-[1px] mx-1 border-gray-400 focus:outline-none px-1 w-[80%]"
             />
           </div>
+          <button className="w-full bg-[#49332b] p-2 duration-500 hover:bg-[#160f0d00]">Send</button>
         </div>
 
         <div className="w-[2px] h-[150px] mx-6 bg-[#38251f] hidden md:block" />
