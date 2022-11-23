@@ -13,8 +13,11 @@
 <li>React router</li>
 <li>Firebase</li>
 
-<h3>Home Page</h3>
-<a href="https://medihelp-5c899.web.app"><img  src="https://user-images.githubusercontent.com/76748226/188741846-2a89942e-9623-457d-a511-b123d4e5b4ed.png"/></a> <br>
-<h3>Mobile View</h3>
-<img src="https://user-images.githubusercontent.com/76748226/188742041-386ad03d-c627-49b5-9f9a-1982054f6ff8.png"/>
+<h3>Landing Page</h3>
+<br/>
+
+![coffeLandingPage](https://user-images.githubusercontent.com/76748226/203640670-3b07c5ba-a739-4980-a7b3-3d05854128a5.png)
+
+
+
 
