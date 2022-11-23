@@ -10,9 +10,9 @@ const Footer = () => {
       <hr />
       <section className="p-8">
         <div className="sm:flex sm:flex-row">
-          <div className="basis-1/4">
-            <div className="logo px-5 py-3">
-              <Link to="/"><img src="https://i.ibb.co/Qc5zfzp/logo.png" alt="" className="w-3/4" /></Link>
+          <div className="basis-1/4 flex items-center">
+            <div className="logo p-3">
+              <Link to="/"><img src="https://i.ibb.co/Qc5zfzp/logo.png" alt="" className="" /></Link>
             </div>
           </div>
           <div className="quicklink basis-1/4 p-5">

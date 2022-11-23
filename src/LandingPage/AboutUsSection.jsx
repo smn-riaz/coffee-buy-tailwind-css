@@ -15,7 +15,7 @@ const AboutUsSection = () => {
           />
         </div>
 
-        <div className="p-10 rounded-lg border-[0.5px] border-white space-y-5 bg-[#221714] basis-1/2">
+        <div className="sm:p-10 p-2 rounded-lg border-[0.5px] border-white space-y-5 bg-[#221714] basis-1/2">
           <div>
             <h1 className="text-4xl font-semibold uppercase text-white">
               About Us

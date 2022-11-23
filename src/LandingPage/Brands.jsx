@@ -16,7 +16,7 @@ const Brands = () => {
         <div className="flex justify-around items-center flex-wrap">
           {brands.map((image) => (
             <div className="m-2">
-              <img className="rounded-full w-[130px] h-[130px]" src={image} alt="" />
+              <img className="rounded-full w-[130px] h-[130px] hover:opacity-70" src={image} alt="" />
             </div>
           ))}
         </div>
