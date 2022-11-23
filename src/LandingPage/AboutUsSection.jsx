@@ -1,15 +1,21 @@
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import Button from "./Button";
 
 const AboutUsSection = () => {
   return (
-    <main className="min-h-screen p-5">
-      <div className="sm:grid-cols-2 sm:grid sm:space-x-28 sm:p-12 mx-auto">
-        <div className="m-auto">
-          <img src="https://i.ibb.co/k42vNZW/coffeehot.jpg" alt="" className="" />
+    <main className="section-layout">
+      <section className="md:flex justify-center items-center sm:px-16 p-8  space-y-6">
+        <div className="basis-1/2 flex justify-center items-center">
+          <img
+            src="https://i.ibb.co/k42vNZW/coffeehot.jpg"
+            alt=""
+            className="max-h-[600px]"
+          />
         </div>
-        <div className="sm:m-auto p-10 rounded-lg border-2 border-[#803b28] space-y-5 bg-servicecardbg">
+
+        <div className="p-10 rounded-lg border-[0.5px] border-white space-y-5 bg-[#221714] basis-1/2">
           <div>
             <h1 className="text-4xl font-semibold uppercase text-white">
               About Us
@@ -24,12 +30,10 @@ const AboutUsSection = () => {
             </p>
           </div>
           <div>
-            <button className="border-2 text-xl rounded-3xl px-6 py-2 border-[#803b28] uppercase text-white"><FontAwesomeIcon className="px-2" icon={faShoppingCart} />
-               Shop now
-            </button>
+            <Button>Shop Now </Button>
           </div>
         </div>
-      </div>
+      </section>
     </main>
   );
 };

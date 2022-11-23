@@ -12,8 +12,3 @@ function App() {
 }
 
 export default App;
-
-// https://i.ibb.co/1MmMPRc/coffeebean.webp
-
-// https://i.ibb.co/ZdGgxgq/coffeelatte2.jpg
-// https://i.ibb.co/RD8qr9s/coffeeabout.png

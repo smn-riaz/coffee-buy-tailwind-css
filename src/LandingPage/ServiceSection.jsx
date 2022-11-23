@@ -1,80 +1,54 @@
-import React from 'react'
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart, } from '@fortawesome/free-solid-svg-icons'
-
+import React from "react";
+import {BsArrowRightCircle} from 'react-icons/bs'
+import SectionHeadline from "./SectionHeadline";
 
 const ServiceSection = () => {
+  const services = [
+    {
+      image: "https://i.ibb.co/w6K9vwz/coffeemachine.jpg",
+      h1: "Coffee Bean",
+    },
+    {
+      image: "https://i.ibb.co/FWCcM9v/coffeeingrad.jpg",
+      h1: "Coffee Ingredients",
+    },
+    {
+      image: "https://i.ibb.co/w6K9vwz/coffeemachine.jpg",
+      h1: "Coffee Machine",
+    },
+    {
+      image: "https://i.ibb.co/FWCcM9v/coffeeingrad.jpg",
+      h1: "Coffee Latte",
+    },
+  ];
   return (
-    <main className='min-h-screen'>
-      <h3 className='text-center text-4xl font-semibold uppercase text-white'>Our Service</h3>
-      <section className='sm:grid-cols-3 text-center sm:grid space-x-6 px-8 py-6'>
-
-        <div className='bg-servicecardbg p-3 rounded-md border-2 border-amber-900 m-3'>
-          <div className=''>
-            <img className='rounded-xl' src="https://i.ibb.co/w6K9vwz/coffeemachine.jpg" alt="" />
-          </div>
-          <div className=''><h2 className='text-2xl text-center text-white p-3'>Coffee Machine</h2></div>
-          <div className='border-amber-900 border-2 mx-auto rounded-full w-fit'><button className='border-0 text-lg py-2 px-3'><FontAwesomeIcon icon={faHeart} className="text-white"/></button></div>
-        </div>
-        
-
-        <div className='bg-servicecardbg p-3 rounded-md border-2 border-amber-900 m-3 row-span-2'>
-          <div className='h-5/6'>
-            <img className='rounded-xl h-full'  src="https://i.ibb.co/VQxDsSX/coffeewhite.jpg" alt="" />
-          </div>
-          <div className="py-3">
-            <div className=''><h2 className='text-2xl text-center text-white p-3'>Coffee Bean</h2></div>
-            <div className='border-amber-900 border-2 mx-auto rounded-full w-fit'><button className='border-0 text-lg py-2 px-3'><FontAwesomeIcon icon={faHeart} className="text-white"/></button>
+    <main className="section-layout">
+      <SectionHeadline>Our Service</SectionHeadline>
+      <section className="grid sm:grid-cols-2 md:grid-cols-4 grid-cols-1 text-center px-6">
+        {services.map((service) => (
+          <div className="bg-servicecardbg p-3 rounded-md border-[1px] border-white m-3">
+            <div className="overflow-hidden">
+              <img
+                className="w-full h-full hover:scale-110 duration-500"
+                src={service.image}
+                alt=""
+              />
+            </div>
+            <div className="">
+              <h1 className="text-2xl text-center text-white p-3">
+                {service.h1}
+              </h1>
+              <div className="flex justify-center items-center">
+                <p className={`p-2 border-[0.5px] cursor-pointer hover:bg-[#815a4b] border-[#815a4b] rounded-full duration-500`}>
+                  <BsArrowRightCircle color="white"/>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-
-
-        <div className='bg-servicecardbg p-3 rounded-md border-2 border-amber-900 m-3'>
-          <div className=''>
-            <img className='rounded-xl' src="https://i.ibb.co/K6BgKsp/coffeecup.webp" alt="" />
-          </div>
-          <div className=''><h2 className='text-2xl text-center text-white p-3'>Black Coffee</h2></div>
-          <div className='border-amber-900 border-2 mx-auto rounded-full w-fit'><button className='border-0 text-lg py-2 px-3'><FontAwesomeIcon icon={faHeart} className="text-white"/></button></div>
-        </div>
-
-
-        
-      <div className='bg-servicecardbg p-3 rounded-md border-2 border-amber-900 m-3'>
-          <div className=''>
-            <img className='rounded-xl' src="https://i.ibb.co/94bZjm6/coffeetypes.jpg" alt="" />
-          </div>
-          <div className=''><h2 className='text-2xl text-center text-white p-3'>Many Types</h2></div>
-          <div className='border-amber-900 border-2 mx-auto rounded-full w-fit'><button className='border-0 text-lg py-2 px-3'><FontAwesomeIcon icon={faHeart} className="text-white"/></button></div>
-        </div>
-
-        
-
-
-        <div className='bg-servicecardbg p-3 rounded-md border-2 border-amber-900 m-3 row-span-2'>
-          <div className='h-5/6'>
-            <img className='rounded-xl h-full'  src="https://i.ibb.co/cCvrjsG/coffeelatte.jpg" alt="" />
-          </div>
-          <div className="py-3">
-            <div className=''><h2 className='text-2xl text-center text-white p-3'>Coffee Latte</h2></div>
-            <div className='border-amber-900 border-2 mx-auto rounded-full w-fit'><button className='border-0 text-lg py-2 px-3'><FontAwesomeIcon icon={faHeart} className="text-white"/></button>
-            </div>
-          </div>
-        </div>
-
-
-        <div className='bg-servicecardbg p-3 rounded-md border-2 border-amber-900 m-3 col-span-2'>
-          <div className=''>
-            <img className='rounded-xl' src="https://i.ibb.co/FWCcM9v/coffeeingrad.jpg" alt="" />
-          </div>
-          <div className=''><h2 className='text-2xl text-center text-white p-3'>Coffee Ingredients</h2></div>
-          <div className='border-amber-900 border-2 mx-auto rounded-full w-fit'><button className='border-0 text-lg py-2 px-3'><FontAwesomeIcon icon={faHeart} className="text-white"/></button></div>
-        </div>
-
+        ))}
       </section>
     </main>
-  )
-}
+  );
+};
 
-export default ServiceSection
+export default ServiceSection;

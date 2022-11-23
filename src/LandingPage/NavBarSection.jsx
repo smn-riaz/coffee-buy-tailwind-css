@@ -2,77 +2,80 @@ import { faBarChart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
+import Button from "./Button";
 
 const NavBarSection = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3  mb-3">
-        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
-          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-            <div>
-              <Link to="/"><img src="https://i.ibb.co/Qc5zfzp/logo.png" className="w-1/4" alt="" /></Link>
-            </div>
-            <button
-              className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-              type="button"
-              onClick={() => setNavbarOpen(!navbarOpen)}
+      <div className="navbar px-16 bg-[#241915]">
+        <div className="navbar-start">
+          <div className="dropdown">
+            <label tabIndex={0} className="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabIndex={0}
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-[#3d2b24] rounded-box w-52 uppercase"
             >
-              <FontAwesomeIcon className="px-2" icon={faBarChart} />
-            </button>
-          </div>
-          <div
-            className={
-              "lg:flex flex-grow items-center" +
-              (navbarOpen ? " flex" : " hidden")
-            }
-            id="example-navbar-danger"
-          >
-            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto py-3">
-              <li className="nav-item">
-                <Link
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  to="/"
-                >
-                  <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Home</span>
-                </Link>
+              <li className="mx-3">
+                <Link to="/">Home</Link>
               </li>
-              <li className="nav-item">
-                <Link
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  to="/"
-                >
-                  <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Contact</span>
-                </Link>
+              <li className="mx-3">
+                <Link to="/">About</Link>
               </li>
-              <li className="nav-item">
-                <Link
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  to="/"
-                >
-                  <i className="fab fa-twitter text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Service</span>
-                </Link>
+              <li className="mx-3">
+                <Link to="/">Service</Link>
               </li>
-              <li className="nav-item">
-                <Link
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  to="/"
-                >
-                  <i className="fab fa-twitter text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Buy</span>
-                </Link>
+              <li className="mx-3">
+                <Link to="/">Faqs</Link>
               </li>
-              <li className="nav-item">
-                <Link
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  to="/"
-                >
-                  <i className="fab fa-pinterest text-lg leading-lg text-white opacity-75"></i><span className="ml-2">About</span>
-                </Link>
+              <li className="mx-3">
+                <Link to="/">Contact</Link>
               </li>
             </ul>
           </div>
         </div>
-      </nav>
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal p-0 uppercase font-semibold text-white text-sm">
+            <li className="mx-3">
+              <Link to="/">Home</Link>
+            </li>
+            <li className="mx-3">
+              <Link to="/">About</Link>
+            </li>
+            <li className="mx-3">
+              <Link to="/">Service</Link>
+            </li>
+            <li className="mx-3">
+              <Link to="/">Faqs</Link>
+            </li>
+            <li className="mx-3">
+              <Link to="/">Contact</Link>
+            </li>
+          </ul>
+        </div>
+        <div className="navbar-end">
+          <img
+            src="https://i.ibb.co/Qc5zfzp/logo.png"
+            className="h-[70px]"
+            alt=""
+          />
+        </div>
+      </div>
     </>
   );
 };

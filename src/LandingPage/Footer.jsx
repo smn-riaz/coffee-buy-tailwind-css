@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <main className="min-h-fit">
+    <main className="section-layout">
       <hr />
-      <section>
-        <div className="sm:flex sm:flex-row text-center sm:text-left">
+      <section className="p-8">
+        <div className="sm:flex sm:flex-row">
           <div className="basis-1/4">
             <div className="logo px-5 py-3">
               <Link to="/"><img src="https://i.ibb.co/Qc5zfzp/logo.png" alt="" className="w-3/4" /></Link>
@@ -58,19 +58,18 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="subscribe basis-1/4 p-5">
+          <div className="basis-1/4 p-5">
             <h3 className="uppercase text-white text-2xl">Subscribe Newsletter</h3>
             <div className="py-5 text-sm text-white uppercase">
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo quam temporibus ab minima quod obcaecati.</p>
             </div>
-            <div className="flex flex-row bg-white px-2 py-1 ">
-                <input type="text" placeholder="Enter Your Email" className="p-2 border-0 w-full outline-none" /><button className=""><FontAwesomeIcon icon={faPaperPlane} /></button>
+            <div className="flex flex-row bg-[#50382f] px-2 py-1 ">
+                <input type="text" placeholder="Enter Your Email" className="bg-[#50382f] p-2 border-0 w-full outline-none" /><button className=""><FontAwesomeIcon icon={faPaperPlane} /></button>
             </div>
           </div>
         </div>
       </section>
-      <hr />
-      <h3 className="text-white text-center p-2">@2022 All rights reserved</h3>
+      <h3 className="text-white text-center">@2022 All rights reserved</h3>
     </main>
   );
 };
