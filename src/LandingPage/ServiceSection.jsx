@@ -24,7 +24,7 @@ const ServiceSection = () => {
   return (
     <main className="section-layout">
       <SectionHeadline>Our Service</SectionHeadline>
-      <section className="grid sm:grid-cols-2 md:grid-cols-4 grid-cols-1 text-center px-6">
+      <section className="grid sm:grid-cols-2 md:grid-cols-4 grid-cols-1 text-center">
         {services.map((service) => (
           <div className="bg-servicecardbg p-3 rounded-md border-[1px] border-white m-3">
             <div className="overflow-hidden">
@@ -38,7 +38,7 @@ const ServiceSection = () => {
               <h1 className="text-2xl text-center text-white p-3">
                 {service.h1}
               </h1>
-              <div className="flex justify-center items-center">
+              <div className="flex justify-center items-center py-1">
                 <p className={`p-2 border-[0.5px] cursor-pointer hover:bg-[#815a4b] border-[#815a4b] rounded-full duration-500`}>
                   <BsArrowRightCircle color="white"/>
                 </p>
